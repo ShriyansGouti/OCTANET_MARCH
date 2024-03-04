@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+
+}
+
+.headder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    filter: opacity(200px);
+    
+}
+
+.logo {
+    
+    margin: 2px;
+    width: 100px;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.links a{
+    color: white;
+    text-decoration:none;
+    height: 1.3vh;
+    width: 0%;
+    position: relative;
+    cursor: pointer;
+    margin: 0 20px;
+    transition:0.3s linear;
+}
+.links a:hover{
+    transition: 0.3s linear;
+    color: orangered;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    flex-basis: 50%;
+    border: 1px solid black;
+    color: white;
+    max-width: 450px;
+    margin: 75px;
+}
+.main-content h1{
+    font-size: clamp(2rem,1rem + 5vw,4rem);
+}
+.main-content h2{
+    color: orangered;
+    margin-top: 10px;
+    font-size: clamp(2rem,1rem + 5vw,3.5rem);
+}
+.main-content p{
+    margin: 10px;
+    color: #635e5c;
+}
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    color: #ede5ff;
+    transition: 0.2s;
+}
+button:hover {
+    box-shadow: 0px 0px 17px -4px orangered;
+    border-color: orangered;
+    color: #f7f5ff;
+    background-color: orangered;
+}
+button:active {
+    box-shadow: 0px 0px 17px -7px orangered;
+    border-color: orangered;
+    transform: scale(0.95);
+}
+.shoe{ 
+    width: 48%;
+    height: 400px;
+    rotate: -25deg;
+    align-items: center;
+    margin-top: 50px;
+    filter: drop-shadow(-10px -10px 200px orangered);
+}
+.search i{
+    position: relative;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7cm;
+    transition: 0.3s;
+}
+.search i:hover{
+    color: orangered;
+    width: 100%;
+}
+.search i:active{
+    transform: translateY(2px);
+
+}
+.order {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    margin-right: 5px;
+    justify-content: space-around;
+    min-height: 7vh;
+}
+.order h4{
+    font-size: 1.8rem;
+}
